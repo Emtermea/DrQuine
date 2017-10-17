@@ -1,0 +1,15 @@
+#!/usr/bin/python
+import os
+import sys
+X = 5
+if X != 0:
+ if (not (sys.argv[0] == "../Sully")) or (not (sys.argv[0] != "./Sully")):
+  X = X -1
+ x = str(X)
+ kid = "Sully_" + x + ".py"
+ f = open(kid, "w")
+ a='#!/usr/bin/python\nimport os\nimport sys\nX =% d\nif X != 0:\n if (not (sys.argv[0] == "../Sully")) or (not (sys.argv[0] != "./Sully")):\n  X = X -1\n x = str(X)\n kid = "Sully_" + x + ".py"\n f = open(kid, "w")\n a=%s\n f.write(a%%(X, `a`))\n f.close()\n cmd = "python Sully_" + x + ".py"\n os.system(cmd)\n'
+ f.write(a%(X, `a`))
+ f.close()
+ cmd = "python Sully_" + x + ".py"
+ os.system(cmd)

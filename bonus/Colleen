@@ -1,0 +1,13 @@
+#!/usr/bin/python
+"""
+ outside main
+"""
+def caca ():
+ return;
+def main ():
+ caca()
+ """
+  inside main
+ """
+ a='#!/usr/bin/python\n"""\n outside main\n"""\ndef caca ():\n return;\ndef main ():\n caca()\n """\n  inside main\n """\n a=%s;print a%%`a`\nmain()';print a%`a`
+main()

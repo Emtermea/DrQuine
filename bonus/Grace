@@ -1,0 +1,8 @@
+#!/usr/bin/python
+"""
+ outside main
+"""
+
+a='#!/usr/bin/python\n"""\n outside main\n"""\n\na=%s; f = open("Grace_kid.py","w");\nf.write(a%%`a`);\nf.close();\n'; f = open("Grace_kid.py","w");
+f.write(a%`a`);
+f.close();
